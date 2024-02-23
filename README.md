@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage
 
-![Design preview for the News homepage coding challenge](.news-homepage-main/design/desktop-preview.jpg)
+![Design preview for the News homepage coding challenge](./news-homepage-main/design/desktop-preview.jpg)
 
 <!-- # Getting Started with Create React App
 
