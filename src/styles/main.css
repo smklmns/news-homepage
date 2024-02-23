@@ -1,0 +1,68 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5%;
+  grid-template-rows: 55% 40%;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  width: 250px;
+  line-height: 45px;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 3;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttonBox p {
+  font-size: 0.8rem;
+  color: var(--dark-grayish-blue);
+  line-height: 20px;
+}
+
+.buttonBox button {
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  background-color: var(--soft-red);
+  border: none;
+  padding: 15px 0;
+  width: 160px;
+  cursor: pointer;
+}
+
+.buttonBox button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+@media(max-width: 800px) {
+  main {
+    width: fit-content;
+  }
+}
+
+@media(max-width: 650px) {
+  main {
+    display: block;
+    margin-bottom: 50px;
+  }
+  main img {
+    height: 300px;
+    object-fit: cover;
+  }
+  main>*, .buttonBox p {
+    margin-bottom: 20px;
+  }
+}

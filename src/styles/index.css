@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url("../news-homepage-main/assets/fonts/static/Inter-Regular.ttf")
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  src: url("../news-homepage-main/assets/fonts/static/Inter-Bold.ttf")
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 800;
+  src: url("../news-homepage-main/assets/fonts/static/Inter-ExtraBold.ttf")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: Inter;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  height: 700px;
+  width: 950px;
+  display: grid;
+  grid-template-rows: 10% 55% 25%;
+  grid-template-columns: 66% 31%;
+  column-gap: 3%;
+  row-gap: 2%;
+}

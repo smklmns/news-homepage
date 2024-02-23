@@ -1,0 +1,75 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 1 / 3;
+}
+
+nav img {
+  position: absolute;
+  right: -10000px;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+nav a {
+  margin-left: 50px;
+  color: var(--dark-grayish-blue);
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--soft-orange);
+}
+
+.closedOverlay {
+  position: absolute;
+  top: -10000px;
+}
+
+@media(max-width: 650px) {
+  header {
+    margin-bottom: 30px;
+  }
+  nav img {
+    position: static;
+    height: initial;
+    width: initial;
+  }
+  .overlay {
+    background-color: var(--very-dark-blue);
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    right: 60%;
+    bottom: 0;
+    top: 0;
+  }
+  
+  .hiddenMenuBox {
+    position: absolute;
+    left: -10000px;
+  }
+  .openedMenuBox {
+    position: fixed;
+    left: 40%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+  }
+  .linksBox {
+    margin-top: 200px;
+  }
+  .linksBox a{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .iconMenuCross {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+}
